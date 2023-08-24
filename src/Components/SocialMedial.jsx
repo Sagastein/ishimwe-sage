@@ -11,7 +11,7 @@ function SocialMedial() {
       <p className="text-slate-900 capitalize text-sm font-medium">
         Connect with me:
       </p>
-      <div className="scroll-container border flex-1">
+      <div className="scroll-container flex-1">
         <div className="flex w-[200%]  justify-between items-center horizontal-scroll ">
           <img className="cursor-pointer" src={Github} alt=".." />
           <img className="cursor-pointer " src={Figma} alt=".." />
