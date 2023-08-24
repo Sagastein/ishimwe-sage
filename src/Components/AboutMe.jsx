@@ -2,7 +2,7 @@ function AboutMe() {
   return (
     <div className="min-h-[80dvh]">
       <h1 className="my-6 font-Fira text-center text-5xl">About Me</h1>
-      <section className="grid sm:flex gap-x-32 border">
+      <section className="grid sm:flex gap-x-32">
         <img
           className="border  hover:drop-shadow-2xl hover:grayscale backdrop-blur cursor-pointer"
           src="SagaAboutMe.png"
