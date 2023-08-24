@@ -81,7 +81,7 @@ function Experiance() {
       >
         Experience
       </motion.h1>
-      <section className="grid py-12   border gap-6 md:grid-cols-2">
+      <section className="grid py-12   gap-6 md:grid-cols-2">
         <aside className="border space-y-8 rounded-2xl p-2 px-4">
           <h1 className="text-center font-Inter  text-4xl">
             Frontend Development
