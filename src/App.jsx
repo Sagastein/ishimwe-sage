@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <main className="w-11/12 mx-auto border">
+      <main className="w-11/12 mx-auto">
         <Banner />
         <AboutMe />
         <Services />
