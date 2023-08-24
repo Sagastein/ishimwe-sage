@@ -51,7 +51,7 @@ function Services() {
       >
         Merging Vision with Function: Crafting Experiences, Code, and Security
       </motion.p>
-      <section className="grid border gap-6 sm:grid-cols-2 md:grid-cols-4 md:h-72 ">
+      <section className="grid  gap-6 sm:grid-cols-2 md:grid-cols-4 md:h-72 ">
         {data.map((service) => (
           <motion.article
             key={service.id}
