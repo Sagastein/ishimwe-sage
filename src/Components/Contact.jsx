@@ -13,7 +13,7 @@ function Contact() {
         Contact
       </motion.h1>
       <section className="grid md:grid-cols-2 gap-x-28">
-        <aside className="border space-y-4 p-4">
+        <aside className=" space-y-4 p-4">
           <h1 className="text-4xl font-Barlow font-medium">
             Connect with Me: Let's Bring Ideas to Life
           </h1>
@@ -47,7 +47,7 @@ function Contact() {
             </div>
           </section>
         </aside>
-        <aside className="border space-y-4 p-4">
+        <aside className="space-y-4 p-4">
           <h1 className="text-2xl font-Barlow font-medium">
             Ready to Collaborate? Let's Connect
           </h1>
