@@ -1,8 +1,9 @@
 import SocialMedial from "./SocialMedial";
 import { Slide, Bounce } from "react-awesome-reveal";
+
 function Banner() {
   return (
-    <main className="border  min-h-screen">
+    <main id="home" className="min-h-screen">
       <aside className="sm:flex">
         <Slide>
           <div className="">
