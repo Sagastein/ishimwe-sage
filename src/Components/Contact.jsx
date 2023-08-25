@@ -4,7 +4,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { BiPhoneCall, BiSend } from "react-icons/bi";
 function Contact() {
   return (
-    <div className="space-y-4 py-8">
+    <div id="contact" className="space-y-4 py-8">
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
