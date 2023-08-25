@@ -76,7 +76,7 @@ function Experiance() {
     },
   ];
   return (
-    <div className="space-y-4 min-h-screen pt-12">
+    <div id="experience" className="space-y-4 min-h-screen pt-12">
       <motion.p
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
