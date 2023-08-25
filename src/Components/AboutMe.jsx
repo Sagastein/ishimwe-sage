@@ -1,3 +1,5 @@
+import { LiaCertificateSolid } from "react-icons/lia";
+import { LuBookMarked } from "react-icons/lu";
 function AboutMe() {
   return (
     <div id="about" className="min-h-[80dvh]">
@@ -9,9 +11,29 @@ function AboutMe() {
           alt="Me"
         />
         <article>
-          <section className="grid lg:grid-cols-2 gap-6">
-            <div className="rounded-lg shadow-lg border h-72  block">a</div>
-            <div className="rounded-lg shadow-lg border h-72 block">b</div>
+          <section className="grid lg:grid-cols-2 gap-6 py-12">
+            <div className="rounded-lg shadow-lg border h-64  block">
+              <div className="flex justify-center pt-5">
+                <LiaCertificateSolid className="text-center text-5xl" />
+              </div>
+              <h1 className="font-Cardo text-3xl font-semibold text-center">
+                Experience
+              </h1>
+              <p className="whitespace-pre-wrap w-min my-2 text-center mx-auto">
+                2+ years<br></br> Frontend<br></br>Development
+              </p>
+            </div>
+            <div className="rounded-lg shadow-lg border h-64 block">
+              <div className="flex justify-center pt-5">
+                <LuBookMarked className="text-center text-5xl" />
+              </div>
+              <h1 className="font-Cardo text-3xl font-semibold text-center">
+                Education
+              </h1>
+              <p className="whitespace-pre-wrap w-min my-2 text-center mx-auto">
+                B.Sc. Bachelors Degree
+              </p>
+            </div>
           </section>
           <p className="my-8 text-darkgrey">{`
 I'm a passionate software developer with
