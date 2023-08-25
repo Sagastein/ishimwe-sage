@@ -31,7 +31,7 @@ function AboutMe() {
                 Education
               </h1>
               <p className="whitespace-pre-wrap w-min my-2 text-center mx-auto">
-                B.Sc. Bachelors Degree
+                B.Sc. Bachelors Degree 
               </p>
             </div>
           </section>
