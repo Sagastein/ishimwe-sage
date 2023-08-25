@@ -55,7 +55,7 @@ const Navbar = () => {
                 to="home"
                 smooth
                 duration={500}
-                className="font-Fira hover:text-gray-300"
+                className="font-Fira cursor-pointer hover:text-gray-300"
               >
                 Home
               </Link>
@@ -65,7 +65,7 @@ const Navbar = () => {
                 to="about"
                 smooth
                 duration={500}
-                className="font-Fira hover:text-gray-300"
+                className="font-Fira cursor-pointer hover:text-gray-300"
               >
                 About
               </Link>
@@ -75,7 +75,7 @@ const Navbar = () => {
                 to="services"
                 smooth
                 duration={500}
-                className="font-Fira hover:text-gray-300"
+                className="font-Fira cursor-pointer hover:text-gray-300"
               >
                 Services
               </Link>
@@ -85,7 +85,7 @@ const Navbar = () => {
                 to="experience"
                 smooth
                 duration={500}
-                className="font-Fira hover:text-gray-300"
+                className="font-Fira cursor-pointer hover:text-gray-300"
               >
                 Experience
               </Link>
@@ -95,7 +95,7 @@ const Navbar = () => {
                 to="contact"
                 smooth
                 duration={500}
-                className="font-Fira hover:text-gray-300"
+                className="font-Fira cursor-pointer hover:text-gray-300"
               >
                 Contact
               </Link>
