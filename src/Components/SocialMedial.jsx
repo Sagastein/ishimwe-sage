@@ -9,7 +9,7 @@ function SocialMedial() {
   return (
     <Fade cascade fraction={1}>
       <section className="flex bg-lightgrey items-center rounded-2xl  border-slate-900  gap-x-4 py-2 my-6 px-4">
-        <p className="text-slate-900 capitalize text-sm font-medium">
+        <p className="text-slate-900 hidden md:block capitalize text-sm font-medium">
           Connect with me:
         </p>
         <div className="scroll-container flex-1">
