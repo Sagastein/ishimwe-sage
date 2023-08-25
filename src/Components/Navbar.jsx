@@ -51,29 +51,54 @@ const Navbar = () => {
               transition={{ duration: 0.3 }}
               className="mx-4"
             >
-              <a href="#home" className="font-Fira hover:text-gray-300">
+              <Link
+                to="home"
+                smooth
+                duration={500}
+                className="font-Fira hover:text-gray-300"
+              >
                 Home
-              </a>
+              </Link>
             </motion.li>
             <li className="mx-4">
-              <a href="#home" className="font-Fira hover:text-gray-300">
+              <Link
+                to="about"
+                smooth
+                duration={500}
+                className="font-Fira hover:text-gray-300"
+              >
                 About
-              </a>
+              </Link>
             </li>
             <li className="mx-4">
-              <a href="#home" className="font-Fira hover:text-gray-300">
+              <Link
+                to="services"
+                smooth
+                duration={500}
+                className="font-Fira hover:text-gray-300"
+              >
                 Services
-              </a>
+              </Link>
             </li>
             <li className="mx-4">
-              <a href="#home" className="font-Fira hover:text-gray-300">
+              <Link
+                to="experience"
+                smooth
+                duration={500}
+                className="font-Fira hover:text-gray-300"
+              >
                 Experience
-              </a>
+              </Link>
             </li>
             <li className="mx-4">
-              <a href="#home" className="font-Fira hover:text-gray-300">
+              <Link
+                to="contact"
+                smooth
+                duration={500}
+                className="font-Fira hover:text-gray-300"
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
