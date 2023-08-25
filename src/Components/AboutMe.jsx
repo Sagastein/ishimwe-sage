@@ -1,6 +1,6 @@
 function AboutMe() {
   return (
-    <div className="min-h-[80dvh]">
+    <div id="about" className="min-h-[80dvh]">
       <h1 className="my-6 font-Fira text-center text-5xl">About Me</h1>
       <section className="grid sm:flex gap-x-32">
         <img
