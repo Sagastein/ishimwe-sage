@@ -1,7 +1,17 @@
+/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import ecclipse from "../assets/Ellipse 1.svg";
+const ExperienceItem = ({ item, experience }) => (
+  <div className="flex gap-x-4 items-start">
+    <img src={ecclipse} alt="alt" />
+    <h2>
+      <span className="block font-Inter font-medium text-3xl">{item}</span>
+      <span className="block text-darkgrey font-medium">{experience}</span>
+    </h2>
+  </div>
+);
 function Experiance() {
-  const Fronted = [
+  const frontendSkills = [
     {
       id: 1,
       item: "HTML 5",
@@ -33,7 +43,7 @@ function Experiance() {
       exprience: "Intermediate",
     },
   ];
-  const Bankend = [
+  const backendSkills = [
     {
       id: 1,
       item: "Git",
@@ -81,42 +91,32 @@ function Experiance() {
       >
         Experience
       </motion.h1>
-      <section className="grid py-12   gap-6 md:grid-cols-2">
-        <aside className="border space-y-8 rounded-2xl p-2 px-4">
+      <section className="grid py-12    gap-6 md:grid-cols-2">
+        <aside className="border cursor-pointer shadow-lg space-y-8 rounded-2xl p-2 px-4">
           <h1 className="text-center font-Inter  text-4xl">
             Frontend Development
           </h1>
           <article className="grid justify-center gap-x-6 gap-y-10 sm:grid-cols-2">
-            {Fronted.map((exp) => (
-              <div key={exp.id} className="flex gap-x-4 items-start">
-                <img src={ecclipse} alt="alt" />
-                <h2>
-                  <span className="block font-Inter font-medium text-3xl">
-                    {exp.item}
-                  </span>
-                  <span className="block text-darkgrey font-medium">
-                    {exp.exprience}
-                  </span>
-                </h2>
-              </div>
+            {frontendSkills.map((exp) => (
+              <ExperienceItem
+                key={exp.id}
+                item={exp.item}
+                experience={exp.exprience}
+              />
             ))}
           </article>
         </aside>
-        <aside className="border space-y-8 rounded-2xl p-2 px-4">
+        <aside className="border shadow-lg  cursor-pointer space-y-8 rounded-2xl p-2 px-4">
           <h1 className="text-center font-Inter  text-4xl">
             Backend Development
           </h1>
           <article className="grid justify-center gap-x-6 gap-y-10 sm:grid-cols-2">
-            {Bankend.map((exp) => (
-              <div key={exp.id} className="flex gap-x-4 items-start">
-                <img src={ecclipse} alt="alt" />
-                <h2>
-                  <span className="block font-medium text-3xl">{exp.item}</span>
-                  <span className="block text-darkgrey font-medium">
-                    {exp.exprience}
-                  </span>
-                </h2>
-              </div>
+            {backendSkills.map((exp) => (
+              <ExperienceItem
+                key={exp.id}
+                item={exp.item}
+                experience={exp.exprience}
+              />
             ))}
           </article>
         </aside>
