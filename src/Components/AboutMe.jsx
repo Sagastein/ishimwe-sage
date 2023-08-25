@@ -9,9 +9,9 @@ function AboutMe() {
           alt="Me"
         />
         <article>
-          <section className="grid border lg:grid-cols-2 gap-6">
-            <div className="rounded-md border h-72  block">a</div>
-            <div className="rounded-md border h-72 block">b</div>
+          <section className="grid lg:grid-cols-2 gap-6">
+            <div className="rounded-lg shadow-lg border h-72  block">a</div>
+            <div className="rounded-lg shadow-lg border h-72 block">b</div>
           </section>
           <p className="my-8 text-darkgrey">{`
 I'm a passionate software developer with
