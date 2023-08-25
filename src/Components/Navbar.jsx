@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-
+import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  <Link smooth duration={500}></Link>;
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
@@ -80,7 +81,7 @@ const Navbar = () => {
           onClick={toggleMobileMenu}
           className="block md:hidden focus:outline-none"
         >
-          <svg
+          {/* <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
             fill="none"
@@ -93,52 +94,71 @@ const Navbar = () => {
               strokeWidth={2}
               d="M4 6h16M4 12h16M4 18h16"
             />
-          </svg>
+          </svg> */}
+          {isMobileMenuOpen ? <FaTimes></FaTimes> : <FaBars />}
         </button>
         <ul
           className={`${
             isMobileMenuOpen ? "flex flex-col" : "hidden"
-          } md:hidden absolute top-12 right-0 bg-white py-2 shadow-md rounded-md transition-all duration-300 ease-in-out`}
+          } md:hidden absolute top-14 right-0  w-full py-2 shadow-md rounded-md transition-all duration-300 ease-in-out ${
+            isScrolled ? "bg-slate-900 text-white" : "bg-white"
+          }  z-50 transition-all duration-500 ease-in-out`}
         >
           <li className="mx-4">
-            <a
-              href="#home"
+            <Link
+              onClick={() => setIsMobileMenuOpen(false)}
+              to="home"
+              smooth
+              duration={500}
               className="block py-2 px-4 font-Fira hover:text-gray-300"
             >
               Home
-            </a>
+            </Link>
           </li>
           <li className="mx-4">
-            <a
-              href="#home"
+            <Link
+              onClick={() => setIsMobileMenuOpen(false)}
+              activeClass="active"
+              to="about"
+              smooth
+              duration={500}
               className="block py-2 px-4 font-Fira hover:text-gray-300"
             >
               About
-            </a>
+            </Link>
           </li>
           <li className="mx-4">
-            <a
-              href="#home"
+            <Link
+              onClick={() => setIsMobileMenuOpen(false)}
+              to="services"
+              smooth
+              duration={500}
               className="block py-2 px-4 font-Fira hover:text-gray-300"
             >
               Services
-            </a>
+            </Link>
           </li>
           <li className="mx-4">
-            <a
-              href="#home"
+            <Link
+              onClick={() => setIsMobileMenuOpen(false)}
+              to="experience"
+              smooth
+              duration={500}
               className="block py-2 px-4 font-Fira hover:text-gray-300"
             >
               Experience
-            </a>
+            </Link>
           </li>
           <li className="mx-4">
-            <a
-              href="#home"
+            <Link
+              onClick={() => setIsMobileMenuOpen(false)}
+              to="contact"
+              smooth
+              duration={500}
               className="block py-2 px-4 font-Fira hover:text-gray-300"
             >
               Contact
-            </a>
+            </Link>
           </li>
           {/* Other mobile menu items */}
         </ul>
