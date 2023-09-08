@@ -6,7 +6,7 @@ function AboutMe() {
       <h1 className="my-6 font-Fira text-center text-5xl">About Me</h1>
       <section className="grid sm:flex gap-x-32">
         <img
-          className="border  hover:drop-shadow-2xl hover:grayscale backdrop-blur cursor-pointer"
+          className="hover:drop-shadow-2xl hover:grayscale backdrop-blur cursor-pointer"
           src="SagaAboutMe.png"
           alt="Me"
         />
@@ -31,7 +31,7 @@ function AboutMe() {
                 Education
               </h1>
               <p className="whitespace-pre-wrap w-min my-2 text-center mx-auto">
-                B.Sc. Bachelors Degree 
+                B.Sc. Bachelors Degree
               </p>
             </div>
           </section>
