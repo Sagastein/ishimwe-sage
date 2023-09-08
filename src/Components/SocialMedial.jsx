@@ -14,12 +14,53 @@ function SocialMedial() {
         </p>
         <div className="scroll-container flex-1">
           <div className="flex   justify-between items-center horizontal-scroll ">
-            <img className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md" src={Github} alt=".." />
-            <img className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md" src={Figma} alt=".." />
-            <img className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md" src={Gmail} alt=".." />
-            <img className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md" src={Twitter} alt=".." />
-            <img className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md" src={LinkedIn} alt=".." />
-            <img className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md" src={Instragram} alt=".." />
+            <img
+              className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md"
+              onClick={() =>
+                (window.location.href = "https://github.com/Sagastein")
+              }
+              src={Github}
+              alt=".."
+            />
+            <img
+              onClick={() => (window.location.href = "https://figma.com/")}
+              className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md"
+              src={Figma}
+              alt=".."
+            />
+            <img
+              className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md"
+              src={Gmail}
+              alt=".."
+              onClick={() =>
+                (window.location.href = "mail:ishimwe.sage.3@gmail.com")
+              }
+            />
+            <img
+              className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md"
+              src={Twitter}
+              alt=".."
+              onClick={() =>
+                (window.location.href = "https://twitter.com/ishimwe_sage")
+              }
+            />
+            <img
+              className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md"
+              src={LinkedIn}
+              alt=".."
+              onClick={() =>
+                (window.location.href =
+                  "https://www.linkedin.com/in/ishimwe-sage-7799091b2/")
+              }
+            />
+            <img
+              className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md"
+              src={Instragram}
+              alt=".."
+              onClick={() =>
+                (window.location.href = "https://instagram.com/Sagastein_45")
+              }
+            />
           </div>
         </div>
       </section>
