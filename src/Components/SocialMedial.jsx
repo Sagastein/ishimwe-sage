@@ -14,12 +14,12 @@ function SocialMedial() {
         </p>
         <div className="scroll-container flex-1">
           <div className="flex   justify-between items-center horizontal-scroll ">
-            <img className="cursor-pointer" src={Github} alt=".." />
-            <img className="cursor-pointer " src={Figma} alt=".." />
-            <img className="cursor-pointer " src={Gmail} alt=".." />
-            <img className="cursor-pointer " src={Twitter} alt=".." />
-            <img className="cursor-pointer " src={LinkedIn} alt=".." />
-            <img className="cursor-pointer " src={Instragram} alt=".." />
+            <img className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md" src={Github} alt=".." />
+            <img className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md" src={Figma} alt=".." />
+            <img className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md" src={Gmail} alt=".." />
+            <img className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md" src={Twitter} alt=".." />
+            <img className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md" src={LinkedIn} alt=".." />
+            <img className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md" src={Instragram} alt=".." />
           </div>
         </div>
       </section>
