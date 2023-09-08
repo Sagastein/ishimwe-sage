@@ -16,8 +16,12 @@ function SocialMedial() {
           <div className="flex   justify-between items-center horizontal-scroll ">
             <img
               className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md"
+              title="Github"
+              // onClick={() =>
+              //   (window.location.href = "https://github.com/Sagastein")
+              // }
               onClick={() =>
-                (window.location.href = "https://github.com/Sagastein")
+                window.open("https://github.com/Sagastein", "_blank")
               }
               src={Github}
               alt=".."
