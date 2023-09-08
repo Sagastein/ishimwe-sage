@@ -25,12 +25,14 @@ function SocialMedial() {
             <img
               onClick={() => (window.location.href = "https://figma.com/")}
               className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md"
+              title="Figma"
               src={Figma}
               alt=".."
             />
             <img
               className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md"
               src={Gmail}
+              title="Gmail"
               alt=".."
               onClick={() =>
                 (window.location.href = "mail:ishimwe.sage.3@gmail.com")
@@ -39,6 +41,7 @@ function SocialMedial() {
             <img
               className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md"
               src={Twitter}
+              title="Twitter Profile"
               alt=".."
               onClick={() =>
                 (window.location.href = "https://twitter.com/ishimwe_sage")
@@ -47,6 +50,7 @@ function SocialMedial() {
             <img
               className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md"
               src={LinkedIn}
+              title="LinkedIn"
               alt=".."
               onClick={() =>
                 (window.location.href =
@@ -56,9 +60,10 @@ function SocialMedial() {
             <img
               className="cursor-pointer hover:scale-90 hover:shadow-md rounded-md"
               src={Instragram}
+              title="instagram"
               alt=".."
               onClick={() =>
-                (window.location.href = "https://instagram.com/Sagastein_45")
+                window.open("https://instagram.com/Sagastein_45", "_blank")
               }
             />
           </div>
